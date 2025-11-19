@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.future {
+    all: initial;
+    all: inherit;
+    all: unset;
+  }
+
+.player__button {
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+    height: 50px;
+    width: 39px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.right__button {
+    margin-right: 3px;
+}
+
+.time-box {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 100%;
+}
+
+.js-progress-slider {
+    background-color: red;
+    border-radius: 60px;
+}
+
+.progress-marker {
+    transition: 300ms ease-in-out;
+    display: flex;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border: solid 3px white;
+    border-radius: 50%;
+    align-items: center;
+    margin-top: -4px;
+    margin-left: -7px;
+    opacity: 0%;
+}
+
+.play__menu:hover {
+    .progress-marker {
+        opacity: 100%;
+    }
+}
+
+.progress-bar {
+    display: flex;
+    flex: 1 1 100%;
+    height: 5px;
+    margin-inline: 15px;
+}
+
+.play__menu {
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.player {
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 0 15px;
+    display: flex;
+    flex-grow: 100;
+    flex-direction: column;
+}
+
+.videocontainer {
+    flex-grow: 1;
+}
+

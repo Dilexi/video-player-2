@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Videoplayer</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="./play-icon.png" sizes="16x16">
+    </head>
+    <body>
+        <div id="player" class="player">
+            <div class="js-video-container videocontainer"></div>
+            <div class="play__menu">
+                <button class="js-play-button player__button">
+                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                </button>
+                <button class="js-pause-button player__button">
+                    <i class="fa fa-pause fa-lg" aria-hidden="true"></i>
+                </button>
+                <button class="js-mute-button player__button">
+                    <i class="fa fa-volume-up fa-lg" aria-hidden="true"></i>
+                </button>
+                <button class="js-volume-button player__button">
+                    <i class="fa fa-volume-off fa-lg" aria-hidden="true"></i>
+                </button>
+                <div class="time-box">
+                    <span class="js-current-time"></span>
+                    <div class="js-progress progress-bar">
+                        <div class="js-progress-slider"></div>
+                        <div class="progress-marker"></div>
+                    </div>
+                    <span class="js-duration"></span>
+                </div>
+                <button class="js-fullscreen-button player__button right__button">
+                    <i class="fa fa-expand fa-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+        <script src="JS/player.js"></script>
+        <script type="text/javascript">
+            createPlayer({elementId: 'player'});
+        </script>
+    </body>    
+</html>
